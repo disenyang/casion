@@ -1,0 +1,9 @@
+/**
+ * Created by gaoyang on 2018/01/05.
+ * @title 数据库列表样式
+ */
+.db-detail-wrapper{
+    .yii-row{
+        line-height:50px;
+    }
+}

@@ -1,0 +1,43 @@
+.pageversion-modal-wrapper{
+	
+	.pageversion-modal{
+		padding: 10px;
+		width: 800px;
+		overflow: auto;
+		height: 100%;
+		.com-propEdit{
+			height: 100%;
+		}
+		.yii-tabs--content{
+			display: block !important;
+		}
+	}
+	.row{
+		margin-top: 10px;
+		margin-right: 10px;
+		display: flex;
+		.lab{
+			width: 65px;
+			line-height: 30px;
+			padding-left: 5px;
+		}
+		.val{
+			flex:1;
+		}
+	}
+	.btns{
+		line-height: 50px;
+		text-align: center;
+		button{
+			cursor: pointer;
+			width: 100px;
+			height: 40px;
+			border-radius:20px; 
+			background: #32be77;
+			color: #333;
+			margin-right: 20px;
+			margin-left: 0px;
+			outline: none;
+		}
+	}
+}

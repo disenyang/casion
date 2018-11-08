@@ -1,0 +1,104 @@
+/**
+ * Created by gaoyang on 2018/03/27.
+ * @title 公司列表样式
+ */
+@import '../../../public/styles/var.css';
+.company-list-wrapper{
+	margin: 20px;
+	height: calc(100% - 40px);
+	box-sizing: border-box;
+	.p-header{
+		padding: 20px;
+		display: flex;
+		flex-direction: row;
+		background: #fff;
+		height: 100px;
+		justify-content: center;
+		align-items: center;
+		border-radius: 10px;
+		.p-search-bar{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex: 1;
+			.p-search-input{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 60%;
+				max-width: 500px;
+				border:1px solid #eee;
+				border-radius: 5px;
+				padding-left: 10px;
+				transition: 0.5s;
+				height: 45px;
+				background-color: #f7f6f3;
+				&:hover{
+					box-shadow:0 2px 4px rgba(0, 0, 0, 0.15);
+				}
+				.input-search{
+					padding-left: 20px;
+					margin-right: 20px;
+					height: 100%;
+					flex: 1;
+					outline: none;
+					border:none;
+					background-color: transparent;
+				}
+			}
+		}
+	}
+	
+	.company-list{
+		margin-top: 30px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		
+		.company{
+			cursor: pointer;
+			width: 300px;
+			padding: 10px;
+			height: 400px;
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+			border-radius: 10px;
+			background-color: #fff;
+			margin-right: 20px;
+			.name{
+				line-height: 50px;
+				text-align: center;
+			}
+			.logo{
+				text-align: center;
+				color: #333;
+				font-size:14px;
+				img{
+					width: 50px;
+					height: 50px;
+				}
+			}
+			.owner{
+				text-align: right;
+				padding-right: 10px;
+				color: #666;
+			}
+			.remark{
+				text-align: left;
+				flex:1;
+				overflow: hidden;
+				color: #666;
+				line-height: 25px;
+				font-size:12px;
+				.img{
+					width: 50px;
+					height: 50px;
+				}
+			}
+			.edit-btn{
+				text-align: right;
+			}
+		}
+	}
+}

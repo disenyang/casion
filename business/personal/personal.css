@@ -1,0 +1,102 @@
+.personal-wrapper{
+	margin: 20px auto ;
+	width: 1200px;
+	height: calc(100% - 40px);
+	box-sizing: border-box;
+	display: flex;
+	.personal-wrapper-left{
+		width: 300px;
+		background: #fff;
+		height: 100%;
+		.headimg{
+			height: 160px;
+			text-align: center;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.headimg-content{
+				position: relative;
+				width: 120px;
+				height: 120px;
+				border-radius: 60px;
+				margin-top: 20px;
+				overflow: hidden;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+				.show-upload{
+					position: absolute;
+					left: 0px;
+					top: 0px;
+					width: 100%;
+					height: 100%;
+					z-index: 10;
+					background-color: rgba(0,0,0,0.7);
+					line-height: 120px;
+					color: #fff;
+					font-size: 15px;
+				}
+			}
+			
+
+		}
+		.nickname{
+			line-height: 30px;
+			padding-bottom: 20px;
+			font-size: 20px;
+			color: #333;
+			text-align: center;
+			border-bottom:1px solid #eee;
+			input{
+				border:0px;
+				outline: none;
+				width: 100%;
+				text-align: center;
+				color: #333;
+			}
+		}
+		.details{
+			padding: 20px 20px;
+			line-height: 30px;
+			color: #777;
+			font-size: 15px;
+			border-bottom:1px solid #eee;
+			input{
+				border:0px;
+				outline: none;
+				text-align: left;
+				color: #777;
+			}
+		}
+		.teams{
+			padding: 20px 20px;
+			line-height: 30px;
+			color: #777;
+			font-size: 15px;
+		}
+	}
+	.personal-wrapper-right{
+		margin-left: 10px;
+		flex: 1;
+		background: #fff;
+		height: 100%;
+		.tabbar{
+			margin-top: 20px;
+			padding: 0px 20px;
+			display: flex;
+			line-height: 30px;
+			border-bottom: 1px solid #eee;
+			.tab{
+				padding: 0px 20px;
+				font-size: 16px;
+				cursor: pointer;
+				&.selected{
+					background-color: #333;
+					color: #fff;
+				}
+			}
+		}
+	}
+}

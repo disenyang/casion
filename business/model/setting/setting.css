@@ -1,0 +1,12 @@
+/**
+ * Created by gaoyang on 2018/01/04.
+ * @title 数据模型列表样式
+ */
+.model-setting-wrapper{
+	margin: 20px;
+	padding: 20px;
+	height: calc(100% -40px);
+	width: 600px;
+	background: #fff;
+	box-sizing: border-box;
+}

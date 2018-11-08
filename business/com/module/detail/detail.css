@@ -1,0 +1,414 @@
+/**
+ * Created by gaoyang on 2018/03/08.
+ * @title 模版列表样式
+ */
+@import '../../../../public/styles/var.css';
+.module-detail-wrapper{
+	background: #fff;
+	width: 100%; 
+	height: 100%;
+	flex-direction: column;
+    display: flex;
+	height: 100%;
+	width: 100%;
+	flex-direction: column;
+	padding-top: 0px;
+	position: relative;
+	.CodeMirror{
+		height: 100%;
+		font-size: 17px;
+		line-height: 20px;
+	}
+	.inner-insert{
+		background-color: #ffd7ea;
+	}
+	.CodeMirror {
+		height: 100%;
+		font-size: 17px;
+		line-height: 20px;
+	}
+	*{
+		outline: none;
+	}
+	.topbar{
+		display: flex;
+		padding: 5px 0px 0px 10px;
+		align-items: center;
+		.components{
+			flex:1;
+	    	min-height: 30px;
+	    	display: flex;
+	    	align-items: center;
+	    	flex-wrap: wrap;
+	    	.com{
+	    		position: relative;
+	    		box-sizing: border-box;
+	    		margin-left: 3px;
+	    		border: 1px solid transparent;
+	    		width: 30px;
+	    		height: 30px;
+	    		cursor: pointer;
+	    		background-size: 100% auto;;
+	    		background-position: center center;
+	    		background-repeat: no-repeat;
+	    		background-size: 20px 20px;
+	    		&:hover{
+	    			border:1px solid #888;
+	    			border-radius: 3px;
+	    		}
+	    	}
+	    }
+	    .options{
+	    	border-left: 2px solid #ddd;
+	    	.icon-btn{
+	    		margin-left: 5px;
+	    		width: 30px;
+	    		height: 30px;
+	    	}
+	    }
+
+	}
+   
+    .page-wrapper{
+    	width: 100%;
+    	flex: 1;
+    	display: flex;
+    	margin-top: 10px;
+    	flex-direction: column;
+    	.props{
+    		margin-right: 5px;
+    		width: 150px;
+    		border:1px solid #eee;
+    	}
+    	.tabbar{
+    		display: flex;
+    		width: 100%;
+    		height: 30px;
+    		padding-left: 20px;
+    		box-sizing: border-box;
+    		align-items: center;
+    		.tab-wrapper{
+    			line-height: 30px;
+    			padding: 0px 15px;
+    			cursor: pointer;
+    			&.selected{
+    				background-color: var(--color-main-color);
+    				color: #fff;
+    				border-top-left-radius: 3px;
+    				border-top-right-radius: 3px;
+    			}
+    		}
+    	}
+    	#preview-wrapper{
+    		padding: 10px;
+    		height: 100%;
+    		width: 100%;
+    		display: flex;
+    		flex-direction: row;
+    		box-sizing: border-box;
+    		border-top: 1px solid var(--color-main-color);
+    		#preview{
+	    		flex:1;
+	    		overflow: auto;
+	    		position: relative;
+
+	    		.component-sel{
+	    			background-image: url(./images/sbk.png);
+	    			background-repeat: repeat;
+	    		}
+	    		.component-dragover{
+	    			background-color: #ddd;
+	    		}
+	    	}
+	    }
+    	#view-wrapper{
+    		height: 100%;
+    		width: 100%;
+    		display: flex;
+    		flex-direction: row;
+    		box-sizing: border-box;
+    		border-top: 1px solid var(--color-main-color);
+    		#viewCode{
+	    		flex:1;
+	    		overflow: auto;
+	    		position: relative;
+
+	    		.component-sel{
+	    			background-image: url(./images/sbk.png);
+	    			background-repeat: repeat;
+	    		}
+	    		.component-dragover{
+	    			background-color: #ddd;
+	    		}
+	    	}
+    		#props{
+    			padding-top: 5px;
+    			padding-bottom: 5px;
+    			padding-right: 5px;
+    			box-sizing: border-box;
+    			width:240px; 
+    			height: 100%;
+    			float: right;
+    			display: flex;
+    			flex-direction: column;
+    			.caption-bar{
+    				height: 30px;
+    				background-color: var(--color-main-color);
+    				line-height: 30px;
+    				color: #fff;
+    				padding-left: 10px;
+    				border-top-left-radius: 3px;
+    				border-top-right-radius: 3px;
+    			}
+    			.vals{
+    				box-sizing: border-box;
+    				border:1px solid #ddd;
+    				flex:1;
+    				overflow: auto;
+    				.row{
+	    				margin-top: 10px;
+	    				margin-right: 10px;
+	    				display: flex;
+	    				.lab{
+	    					width: 65px;
+	    					line-height: 30px;
+	    					padding-left: 5px;
+	    				}
+	    				.val{
+	    					flex:1;
+	    				}
+	    			}
+    			}
+    			.pop-dialog{
+    				width: 153px;
+    				height: 30px;
+    				border:1px solid #adc2cc;
+    				border-radius: 3px;
+    				display: flex;
+    				justify-content: center;
+    				align-items: center;
+    				cursor: pointer;
+    				.prop-value{
+    					padding-left: 5px;
+    					color: #666;
+    					flex:1;
+    					height: 30px;
+    					line-height: 30px;
+    					overflow: hidden;
+    				}
+    				.yii-icon-edit{
+    					margin-right: 5px;
+    				}
+    			}
+    			
+    		}
+
+    		#comTree{
+    			z-index: 100;
+    			box-sizing: border-box;
+    			width:60%; 
+    			height: 60%;
+    			position: absolute;
+    			top: 20%;
+    			left: 20%;
+    			display: flex;
+    			flex-direction: column;
+    			.caption-bar{
+    				height: 30px;
+    				background-color: var(--color-main-color);
+    				line-height: 30px;
+    				color: #fff;
+    				padding-left: 10px;
+    				border-top-left-radius: 3px;
+    				border-top-right-radius: 3px;
+    			}
+    			.content{
+    				box-sizing: border-box;
+    				border:1px solid #ddd;
+    				flex:1;
+    				background-color: #fff;
+    				overflow: auto;
+    				.row{
+	    				margin-top: 10px;
+	    				margin-right: 10px;
+	    				display: flex;
+	    				.lab{
+	    					width: 65px;
+	    					line-height: 30px;
+	    					padding-left: 5px;
+	    				}
+	    				.val{
+	    					flex:1;
+	    				}
+	    			}
+    			}
+    			
+    		}
+    	}
+    	
+    	#viewModel{
+    		flex:1;
+    		width: 100%;
+    		overflow: auto;
+    		#viewModelValue{
+    			/*background-color: #333;
+    			color: #fff;*/
+    			resize:none;
+    			box-sizing: border-box;
+    			width: 100%;
+    			height: 100%;
+    			outline: none;
+    			font-size: 16px;
+    			overflow: auto;
+    			cursor: text;
+    			.line{
+    				line-height: 22px;
+    				.info{
+    					display: inline-block;
+    					width: 30px;
+    				}
+    				.no{
+    					padding-right: 10px;
+    					display: inline-block;
+    					color: #aaa;
+
+    				}
+
+    				.code{
+    					display: inline-block;
+    				}
+
+    			}
+    		}
+    	}
+    	#service{
+    		height: 100%;
+    		width: 100%;
+    		#serviceValue{
+    			resize:none;
+    			box-sizing: border-box;
+    			padding: 5px;
+    			width: 100%;
+    			height: 100%;
+    			border:1px solid #eee;
+    			outline: none;
+    		}
+    	}
+    	#style{
+    		height: 100%;
+    		width: 100%;
+    		#styleValue{
+    			background-color: #333;
+    			resize:none;
+    			box-sizing: border-box;
+    			padding: 5px;
+    			width: 100%;
+    			height: 100%;
+    			outline: none;
+    			font-size: 16px;
+    			color: #fff;
+    		}
+    	}
+    }
+    .yii-input{
+		line-height: 30px;
+		height: 30px;
+		.yii-input-el{
+			height: 30px;
+		}
+	}
+	.errors{
+		position: absolute;
+		top: 50px;
+		right: 0px;
+		padding-left: 10px;
+		padding-right: 10px;
+		min-height: 30px;
+		z-index: 100;
+		.success{
+			background-image: url(./images/gou.png);
+			padding-left: 20px;
+			margin-top: 5px;
+			background-size: 15px 15px;
+			background-position: left center; 
+			background-repeat: no-repeat;
+			font-size: 12px;
+			color: red;
+		}
+		.error{
+			font-size: 12px;
+			color: red;
+			background-image: url(./images/error.png);
+			padding-left: 20px;
+			margin-top: 5px;
+			background-size: 15px 15px;
+			background-position: left center; 
+			background-repeat: no-repeat;
+		}
+	}
+	.yii-select-menu{
+		min-width: 150px;
+	}
+
+
+    .edit-area{
+
+    	width: 100%;
+    	height: 100%;
+    	display: flex;
+    	flex-direction: column;
+    	.detail-page{
+	    	display: flex;
+	    	padding: 0px 10px 0px 20px;
+	    	box-sizing: border-box;
+	    	height: 60px;
+	    	flex-direction: column;
+	    	.title{
+	    		font-size: 16px;
+		    	font-weight: bold;
+		    	color: #333;
+		    	line-height: 30px;
+		    	height: 30px;
+	    	}
+	    	.content{
+	    		flex: 1;
+		        display: flex;
+		        .row{
+		        	margin-right: 30px;
+		        	display: flex;
+		        	.lab{
+			        	line-height: 30px;
+			        	margin-right: 2px;
+			        	color: #333;
+			        }
+			        .val{
+			        	line-height: 30px;
+			        	height: 30px;
+			        	color: #666;
+			        	img{
+			        		margin-top: 5px;
+			        		height: 20px;
+			        	}
+			        }
+			        .edit-btn{
+			    		position: relative;
+			    		cursor: pointer;
+			    		margin-right: 10px;
+			    		box-sizing: border-box;
+			    		width: 30px;
+			    		height: 30px;
+			    		float: right;
+			    		background-size: 20px 20px;
+			    		background-repeat: no-repeat;
+			    		background-position: center center;
+			    		background-image: url(../../../images/alter.png);
+			    		&:hover{
+			    			border:1px solid #ddd;
+			    		}
+			    	}
+		        }
+		        
+	    	}
+	    }
+	}
+}

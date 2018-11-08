@@ -1,0 +1,12 @@
+/**
+ * Created by gaoyang on 2018/01/05.
+ * @title 数据库列表样式
+ */
+.db-setting-wrapper{
+	margin: 20px;
+	padding: 20px;
+	height: calc(100% -40px);
+	width: 600px;
+	background: #fff;
+	box-sizing: border-box;
+}

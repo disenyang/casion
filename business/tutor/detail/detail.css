@@ -1,0 +1,10 @@
+/**
+ * Created by gaoyang on 2018/04/03.
+ * @title 导师列表样式
+ */
+@import '../../../public/styles/var.css';
+.tutor-detail-wrapper{
+    .yii-row{
+        line-height:50px;
+    }
+}

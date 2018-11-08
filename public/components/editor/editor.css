@@ -1,0 +1,16 @@
+.casion-editor-wrapper{
+	width: 100%;
+	height: 300px;
+	background-color: #272822;
+	position: relative;
+	color: #fff;
+	.editor-text{
+		position: absolute;
+		color: #fff;
+		height: 30px;
+		background: #fff;
+		border:0px;
+		outline: none;
+		resize: none;
+	}
+}

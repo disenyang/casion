@@ -1,0 +1,15 @@
+.layout{
+	box-sizing: border-box;
+	tr{
+		td{
+			
+			border: 1px dashed #eee;
+			&:after{
+				content:"";
+				display: block;
+				min-width: 50px;
+				min-height: 50px;
+			}
+		}
+	}
+}

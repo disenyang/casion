@@ -1,0 +1,10 @@
+/**
+ * Created by gaoyang on 2018/04/04.
+ * @title 积分明细列表样式
+ */
+@import '../../../public/styles/var.css';
+.scoredetail-detail-wrapper{
+    .yii-row{
+        line-height:50px;
+    }
+}

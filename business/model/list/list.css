@@ -1,0 +1,260 @@
+/**
+ * Created by gaoyang on 2018/01/04.
+ * @title 数据模型列表样式
+ */
+ @import '../../../public/styles/var.css';
+
+.model-list-wrapper{
+    margin: 20px;
+    height: calc(100% - 40px);
+    box-sizing: border-box;
+    display: flex;
+    .model-left{
+        display: flex;
+        flex-direction:column;
+        width: 200px;
+        
+        background: #fff;
+        .title{
+            height: 30px;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            .caption{
+                float: left;
+            }
+            .new-db{
+                cursor: pointer;
+                float: right;
+                color: #248bf2; 
+                &.yii-button{
+                    margin-right: 0px;
+                }
+            } 
+        }
+        .list{
+            padding:3px 10px;
+            flex: 1;
+            .db-wrapper{
+                padding: 0px 10px;
+                line-height: 40px;
+                cursor: pointer;
+                background: url(../../images/db.png);
+                background-size: 20px 20px;
+                padding-left: 30px;
+                background-repeat: no-repeat;
+                background-position: left center;
+                display: flex;
+                align-items: center;
+                &.selected{
+                    background-color: #248bf2;
+                    color: #fff;
+                    .yii-button--middle.is-icon-only{
+                        background: transparent;
+                        border: 0px;
+                    }
+                }
+                .name{
+                    flex: 1;
+                }
+            }
+        }
+    }
+    .model-center{
+        width: 250px;
+        margin-left: 20px;
+        overflow: auto;
+        display: flex;
+        flex-direction:column;
+        background: #fff;
+        .title{
+            height: 30px;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            .caption{
+                float: left;
+            }
+            .new-model,.import-model{
+                cursor: pointer;
+                float: right;
+                color: #248bf2; 
+                margin-left: 10px;
+                &.yii-button{
+                    margin-right: 0px;
+                }
+            } 
+        }
+        .list{
+            padding:3px 10px;
+            flex: 1;
+            .model-wrapper{
+                line-height: 40px;
+                cursor: pointer;
+                display: flex;
+                &.selected{
+                    background-color: #248bf2;
+                    color: #fff;
+                    padding-left:10px; 
+                }
+                .yii-button--middle.is-icon-only{
+                    background: transparent;
+                    border: 0px;
+                }
+                .name{
+                    flex: 1;
+                }
+            }
+        }
+    }
+    .model-right{
+        flex: 1;
+        overflow: auto;
+        display: flex;
+        flex-direction:column;
+        background: #fff;
+        margin-left: 20px;
+        
+        .title{
+            height: 30px;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .options{
+            margin: 10px;
+            height: 50px;
+            
+            display: flex;
+            align-items: center;
+            .icon-btn{
+
+            }
+        }
+        .btns{
+            margin: 10px;
+        }
+        .list{
+            padding:0px 10px;
+            flex: 1;
+            border-spacing: 0;
+            overflow: auto;
+            .my-table{
+                border-collapse: collapse;
+                width: 100%;
+                border-top:0px solid #ddd;
+                border-bottom:1px solid #ddd;
+                tr{
+                    th{
+                        background-color: #eeeeee;
+                        padding: 8px;
+                        text-align: center;
+                        line-height: 25px;
+                        /*border-right: 1px solid #dddddd;*/
+                        vertical-align: middle;
+                        word-wrap: break-word;
+                        word-break: break-all;
+                        color: #666;
+                    }
+                    td{
+                        height: 30px;
+                        color: #666;
+                        border-right: 1px solid #dddddd;
+                        border-top:1px solid #ddd;
+                        text-align: center;
+                        padding: 0px;
+                        a{
+                            color: #4ab3fb;
+                        }
+                        input,select{
+                            margin: 0px;
+                            border:0px;
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+                            padding: 0px 5px;
+                            background-color: transparent;
+                            outline: none;
+                        }
+                        
+                        &.op{
+                            padding: 5px;
+                        }
+                    }
+                    &.row-selected{
+                        background-color: var(--color-primary-light);
+                        td{
+                            input,select{
+                                color: #fff;
+                            }
+                            
+                        }
+                    }
+                } 
+            }
+        }
+        .my-value-table{
+                border-collapse: collapse;
+                width: 500px;
+                border:1px solid #ddd;
+                margin-bottom: 5px;
+                tr{
+                    th{
+                        background-color: #eeeeee;
+                        padding: 8px;
+                        text-align: center;
+                        line-height: 25px;
+                        border-right: 1px solid #dddddd;
+                        vertical-align: middle;
+                        word-wrap: break-word;
+                        word-break: break-all;
+                        color: #666;
+                    }
+                    td{
+                        height: 30px;
+                        color: #666;
+                        border-right: 1px solid #dddddd;
+                        border-top:1px solid #ddd;
+                        text-align: center;
+                        padding: 0px;
+                        a{
+                            color: #4ab3fb;
+                        }
+                        input,select{
+                            margin: 0px;
+                            border:0px;
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+                            padding: 0px 5px;
+                            background-color: transparent;
+                            outline: none;
+                        }
+                        
+                        &.op{
+                            padding: 5px;
+                        }
+                    }
+                    
+                } 
+            }
+    }
+    .p-label{
+        width: 100px;
+        text-align: right;
+        padding-right: 5px;
+        line-height: 46px;
+    }
+    .p-value{
+        padding: 7px;
+    }
+    .p-label-c{
+        width: 50px;
+        text-align: left;
+        line-height: 46px;
+    }
+    .p-value-c{
+        padding: 7px;
+    }
+
+}
+.result-class .yii-modal-body{
+    width: 700px !important;
+}

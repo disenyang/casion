@@ -1,0 +1,15 @@
+.button-wrapper{
+	height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    background-color: #2b86ed;
+    color: #fff;
+    border-radius: 2px;
+    border:0px;
+    padding: 2px;
+    margin: 10px;
+    min-width: 80px;
+    user-select: none;
+    outline: none;
+    vertical-align: middle;
+}

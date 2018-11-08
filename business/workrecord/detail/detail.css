@@ -1,0 +1,10 @@
+/**
+ * Created by gaoyang on 2018/04/03.
+ * @title 工作记录列表样式
+ */
+@import '../../../public/styles/var.css';
+.workrecord-detail-wrapper{
+    .yii-row{
+        line-height:50px;
+    }
+}

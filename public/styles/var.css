@@ -1,0 +1,59 @@
+:root{
+    
+    --color-primary: #248bf2;
+    --color-primary-light: #4fa2f4;
+    --color-primary-dark: #207cd9;
+    --color-primary90: color(var(--color-primary) a(90%));
+
+    --color-success: #2dcc14;
+    --color-success-light: #57d643;
+    --color-success-dark: #28b711;
+    --color-main-color:#363533;
+    --color-warn: #ff8000;
+    --color-warn-light: #ff9933;
+    --color-warn-dark: #e57200;
+
+    --color-danger: #e53823;
+    --color-danger-light: #ea5f4f;
+    --color-danger-dark: #cd321f;
+
+    --color-info: #ffee99;
+    --color-info-light: #fff1ad;
+    --color-info-dark: #e5d589;
+    --color-contentbg: #f7f6f3;
+
+    --color-gray20: #333333;
+    --color-gray40: #576166;
+    --color-gray60: #999;
+ 
+    --color-gray80: #adc2cc;
+    --color-gray90: #cfdee6;
+    --color-gray95: #edeff2;
+
+    --color-gray98: #f5f8fa;
+    --color-white: #fff;
+    --color-white90: color(var(--color-white) a(90%));
+    --color-white30: color(var(--color-white) a(30%));
+
+    --color-black: #000;
+    --color-black60: color(var(--color-black) a(60%));
+
+    --border-gray80: 1px solid var(--color-gray80);
+    --border-gray90: 1px solid var(--color-gray90);
+    --box-shadow-small: 0 2px 4px rgba(0, 0, 0, 0.15);
+    --box-shadow-large: 0 4px 8px rgba(0, 0, 0, 0.15);
+    --border-radius-small: 2px;
+    --border-radius-large: 4px;
+
+    --color-disabled: var(--color-gray80);
+    --color-border-disabled: var(--color-gray90);
+    --color-background-disabled: var(--color-gray98);
+
+    --scrollbar-background-color: color(var(--color-gray40) a(50%));
+    --scrollbar-hover-background-color: color(var(--color-gray40) a(60%));
+    --scrollbar-bar-hover-background-color: color(var(--color-gray40) a(30%));
+
+    --white-scrollbar-background-color: color(var(--color-white) a(50%));
+    --white-scrollbar-hover-background-color: color(var(--color-white) a(60%));
+    --white-scrollbar-bar-hover-background-color: color(var(--color-white) a(30%));
+}

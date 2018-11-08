@@ -1,0 +1,12 @@
+/**
+ * Created by gaoyang on 2018/03/07.
+ * @title 环境列表样式
+ */
+@import '../../../public/styles/var.css';
+.environment-list-wrapper{
+	margin: 20px;
+	height: calc(100% - 40px);
+	box-sizing: border-box;
+	background: #fff;
+	padding: 20px;
+}

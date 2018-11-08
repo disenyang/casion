@@ -1,0 +1,117 @@
+/**
+ * Created by gaoyang on 2018/04/08.
+ * @title 计划列表样式
+ */
+@import '../../../public/styles/var.css';
+.plan-list-wrapper{
+	box-sizing: border-box;
+
+	.p-search-req{
+		padding: 20px;
+		background-color: #fff;
+		display: flex;
+		justify-content: left;
+		align-items: center;
+		width: 100%;
+		.p-search-input{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 60%;
+			max-width: 500px;
+			border:1px solid #eee;
+			border-radius: 5px;
+			padding-left: 10px;
+			transition: 0.5s;
+			height: 35px;
+			background-color: #f7f6f3;
+			&:hover{
+				box-shadow:0 2px 4px rgba(0, 0, 0, 0.15);
+			}
+			.input-search{
+				padding-left: 20px;
+				margin-right: 20px;
+				height: 100%;
+				flex: 1;
+				outline: none;
+				border:none;
+				background-color: transparent;
+			}
+		}
+		.yii-date-picker-trigger .yii-input-el[disabled], .yii-input-el[readonly]{
+			border:none;
+			background-color: #f7f6f3;
+		}
+		.yii-button-content,.yii-icon-calendar{
+        	display: none;
+        }
+		.p-search-date-start{
+			margin-left: 20px;
+			width: 200px;
+			
+		}
+		.p-search-date-end{
+			margin-left: 20px;
+		}
+	}
+	.plan-list{
+		margin: 20px;
+		display: flex;
+
+		.plan{
+			margin-bottom: 20px;
+			margin-right: 20px;
+			padding: 20px;
+			width: 200px;
+			height: 200px;
+			background-color: #fff;
+			border-radius: 5px;
+			border:1px solid #eee;
+			transition: 0.3s all;
+			cursor: pointer;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			&:hover{
+				border:1px solid #248bf2;
+			}
+			.name{
+				text-align: center;
+				font-size: 16px;
+				line-height: 50px;
+				color: #333;
+			}
+			.remark{
+				text-align: left;
+				font-size: 13px;
+				line-height: 20px;
+				color: #666;
+				flex: 1;
+				overflow: hidden;
+			}
+			.time{
+				height: 50px;
+				text-align: center;
+				font-size: 13px;
+				line-height: 30px;
+				color: #666;
+			}
+			.edit{
+				position: absolute;
+				right: 10px;
+				bottom: 5px;
+				width: 20px;
+				height: 20px;
+				cursor: pointer;
+			}
+			.del{
+				position: absolute;
+				right: 40px;
+				bottom: 5px;
+				width: 20px;
+				height: 20px;
+				cursor: pointer;
+			}
+		}
+	}
+}

@@ -1,0 +1,492 @@
+/**
+ * Created by gaoyang on 2018/03/27.
+ * @title 需求列表样式
+ */
+@import '../../../public/styles/var.css';
+.requirement-list-wrapper{
+	margin: 20px;
+	height: calc(100% - 40px);
+	box-sizing: border-box;
+	background: #fff;
+	padding: 20px;
+	overflow: auto;
+	.p-search-req{
+		padding: 10px 0px;
+		display: flex;
+		justify-content: left;
+		align-items: center;
+		width: 100%;
+		.input-search{
+			padding-left: 10px;
+			margin-right: 20px;
+			height: 100%;
+			flex: 1;
+			outline: none;
+			border:1px solid #ddd;
+			background-color: transparent;
+		}
+
+		.p-search-btn{
+			margin-left: 10px;
+		}
+		.yii-date-picker-trigger .yii-input-el[disabled], .yii-input-el[readonly]{
+			border:none;
+			background-color: #f7f6f3;
+		}
+		
+		.p-search-date-start{
+			margin-left: 20px;
+			width: 200px;
+			
+		}
+		.p-search-date-end{
+			margin-left: 20px;
+		}
+	}
+	.p-req-con{
+		display: flex;
+		flex-direction: row;
+		.p-desc-content{
+			width: 100%;
+			.p-descs{
+				width: 400px;
+				height: 60px;
+				display: flex;
+				flex-direction: row;
+				.p-desc{
+					margin-right: 40px;		
+					display: flex;
+					flex-direction: row;	
+					align-items: center;		
+					.p-desc-title{
+						width: 35px;
+						color: #333;
+						line-height: 30px;
+					}
+					.p-desc-value{
+						width: 20px;
+						height: 20px;
+						border-radius: 10px;
+					}
+					.p-desc-value-dev{
+						background-color: #333;
+					}
+					.p-desc-value-couplet{
+						background-color: #f98a00;
+					}
+					.p-desc-value-test{
+						background-color: red;
+					}
+					.p-desc-value-online{
+						background-color: #248bf2;
+					}
+				}
+			}
+
+			.requirement-table{
+				margin: 0px;
+				border-spacing: 0;
+			    border-collapse: collapse;
+			    width: 100%;
+			    border-left: 1px solid #d8dde4;
+			    tr{
+			        th{
+			            padding:0px 8px;
+			            text-align: left;
+			            line-height: 45px;
+			            border-right: 1px solid #d8dde4;
+			            vertical-align: middle;
+			            word-wrap: break-word;
+			            background-color: #eee;
+			            word-break: break-all;
+			            white-space: nowrap;
+			            color: #333;
+			            .add-btn{
+		    				font-family: YiiIcon!important;
+						    display: inline-block;
+						    speak: none;
+						    font-style: normal;
+						    font-weight: 400;
+						    font-variant: normal;
+						    text-transform: none;
+						    line-height: 1;
+						    letter-spacing: 0;
+						    -webkit-font-feature-settings: "liga";
+						    -moz-font-feature-settings: "liga=1";
+						    -moz-font-feature-settings: "liga";
+						    -ms-font-feature-settings: "liga" 1;
+						    -o-font-feature-settings: "liga";
+						    font-feature-settings: "liga";
+						    -webkit-font-smoothing: antialiased;
+		    	            color: #666;
+		    	            width: 20px;
+		    	            height: 20px;
+		    	            font-size: 12px;
+		    	            cursor: pointer;
+		    	            &:before{
+		    	            	content: "\E627";
+		    	            }
+			            }
+			        }
+			        td{
+			            height: 37px;
+			            color: #666;
+			            white-space: nowrap;
+			            border-right: 1px solid #d8dde4;
+				        border-bottom:1px solid #d8dde4;
+			            text-align: left;
+			            padding: 0px 10px;
+			            font-size: 13px;
+			            a{
+			                color: #4ab3fb;
+			            }
+			            &.op{
+			                padding: 5px;
+			            }
+			            .yii-button{
+			            	margin-right: 0px;
+			            }
+			            input,.yii-select{
+			            	width: 100%;
+			            	border:none;
+			            	outline: none;
+			            	background-color: transparent;
+			            	text-align: left;
+			            	padding: 0px;
+			            }
+			            .yii-icon-calendar{
+			            	display: none;
+			            }
+
+			            .del-btn{
+		    				font-family: YiiIcon!important;
+						    display: inline-block;
+						    speak: none;
+						    font-style: normal;
+						    font-weight: 400;
+						    font-variant: normal;
+						    text-transform: none;
+		    	            color: #666;
+		    	            width: 20px;
+		    	            font-size: 12px;
+		    	            cursor: pointer;
+		    	            &:before{
+		    	            	content: "\E69F";
+		    	            }
+			            }
+			            .edit-btn{
+			            	font-family: YiiIcon!important;
+						    display: inline-block;
+						    speak: none;
+						    font-style: normal;
+						    font-weight: 400;
+						    font-variant: normal;
+						    text-transform: none;
+		    	            color: #666;
+		    	            width: 20px;
+		    	            font-size: 12px;
+		    	            cursor: pointer;
+		    	            &:before{
+		    	            	content: "\E692";
+		    	            }
+			            }
+			            &.bug-td{
+			            	line-height: 20px;
+			            	color: #666;
+			            }
+			            .time-bar{
+			            	position: relative;
+			            	height: 100%;
+			            	width: 100%;
+			            	overflow: hidden;
+			            	.time-axis{
+			            		position: absolute;
+			            		top: 50%;
+			            		left: 20px;
+			            		right: 20px;
+			            		height: 4px;
+			            		background-color: #ddd;
+
+			            	}
+			            	.today-progress{
+			            		position: absolute;
+			            		top: 0px;
+			            		left: 2px;
+			            		height: 100%;
+			            		background-color: #444;
+			            		transition: 0.3s;
+			            	}
+			            	.time-dot{
+			            		position: absolute;
+			            		border-radius: 10px;
+			            		width: 12px;
+			            		height: 12px;
+			            		border-radius: 6px;
+			            		top: -5px;
+			            		z-index: 10;
+			            		.time-value{
+			            			position: absolute;
+			            			
+			            			transform: translateX(-50%);
+			            		}
+			            	}
+			            	.dev-start-date{
+			            		background-color: #333;
+			            		.time-value{
+			            			top: -20px;
+			            		}
+			            	}
+			            	.dev-end-date{
+			            		background-color: #333;
+			            		.time-value{
+			            			top: 20px;
+			            		}
+			            	}
+			            	.couplet-start-date{
+			            		background-color: #f98a00;
+			            		.time-value{
+			            			top: -20px;
+			            		}
+			            	}
+			            	.couplet-end-date{
+			            		background-color: #f98a00;
+			            		.time-value{
+			            			top: 20px;
+			            		}
+			            	}
+			            	.test-start-date{
+			            		background-color:red;
+			            		.time-value{
+			            			top: -20px;
+			            		}
+			            	}
+			            	.test-end-date{
+			            		background-color:red;
+			            		.time-value{
+			            			top: 20px;
+			            		}
+			            	}
+			            	.online-date{
+			            		background-color:#248bf2;
+			            		.time-value{
+			            			top: -20px;
+			            		}
+			            	}
+			            }
+			            .status-bar{
+			            	width: 80px;
+			            	height: 80px;
+			            	position: relative;
+			            	display: flex;
+			            	align-items: center;
+			            	justify-content: center;
+			            	span{
+			            		padding-left: 5px;
+			            	}
+			            	
+			            }
+			            .status-dev{
+			            	&:before{
+			            		font-family: YiiIcon!important;
+			            		content:"\E6AE";
+			            		display: inline-block;
+							    -webkit-animation: loadingCircle 2s infinite linear;
+							    animation: loadingCircle 2s infinite linear;
+							    font-size: 20px;
+							    color: #333;
+			            	}
+			            }
+
+			            .status-couplet{
+			            	&:before{
+			            		font-family: YiiIcon!important;
+			            		content:"\E6AE";
+			            		display: inline-block;
+							    -webkit-animation: loadingCircle 2s infinite linear;
+							    animation: loadingCircle 2s infinite linear;
+							    font-size: 20px;
+							    color: #f98a00;
+			            	}
+			            	span{
+			            		 color: #f98a00;
+			            	}
+			            }
+
+			            .status-test{
+			            	&:before{
+			            		font-family: YiiIcon!important;
+			            		content:"\E6AE";
+			            		display: inline-block;
+							    -webkit-animation: loadingCircle 2s infinite linear;
+							    animation: loadingCircle 2s infinite linear;
+							    font-size: 20px;
+							    color: red;
+			            	}
+			            	span{
+			            		 color: red;
+			            	}
+			            }
+			            .status-online{
+			            	&:before{
+			            		font-family: YiiIcon!important;
+			            		content:"\E632";
+			            		display: inline-block;
+							    font-size: 20px;
+							    color: #248bf2;
+			            	}
+			            	span{
+			            		 color: #248bf2;
+			            	}
+			            }
+			        }
+
+			    }
+			}
+		}
+		.p-c-content{
+			flex: 1;
+			overflow: auto;
+			.top-bar{
+				height: 100px;
+			}
+			.requirement-timer{
+				margin: 0px;
+			   	.requirement-timer-table{
+					border-spacing: 0;
+				    border-collapse: collapse;
+				    tr{
+				        th{
+				            padding:0px 20px;
+				            text-align: center;
+				            height: 45px;
+				            border-right: 1px solid #ddd;
+				            vertical-align: middle;
+				            word-wrap: break-word;
+				            background-color: #eee;
+				            word-break: break-all;
+				            white-space: nowrap;
+				            color: #333;
+				            position: relative;
+				            .day-wrapper{
+				            	position: relative;
+				            	width: 100%;
+				            	.day{
+					            	font-size: 14px;
+					            	color: #555;
+					            }
+					            .week{
+					            	font-size: 12px;
+					            	color: #888;
+					            }
+					            .today-log{
+					            	position: absolute;
+					            	right: -20px;
+					            	left: -10000px;
+					            	top: -5px;
+					            	bottom: -6px;
+					            	background-color: rgba(250,180,20,0.2);
+					            	.today{
+					            		position: absolute;
+					            		top: -50px;
+					            		right: 0px;
+					            		width: 40px;
+					            		height: 40px;
+					            		background-color: #f1a03a;
+					            		color: #333;
+					            		border-radius: 20px;
+					            		line-height: 40px;
+					            		z-index: 100;
+					            		font-size: 13px;
+					            	}
+					            }
+				            }
+				            .today-alert{
+				            	position: absolute;
+				            	top: -60px;
+				            	right: 0px;
+				            	bottom: 0px;
+				            	border-left: 1px dashed #333;
+				            	z-index: 100;
+				            }
+				        }
+				        td{
+				            height: 37px;
+				            color: #666;
+				            white-space: nowrap;
+				            border-right: 1px solid #d8dde4;
+				            border-bottom:1px solid #d8dde4;
+				            text-align: center;
+				            padding: 0px;
+				            position: relative;
+				            .today-alert{
+				            	position: absolute;
+				            	top: 0px;
+				            	right: 0px;
+				            	bottom: 0px;
+				            	border-left: 1px dashed #333;
+				            }
+				            a{
+				                color: #4ab3fb;
+				            }
+				            &.op{
+				                padding: 5px;
+				            }
+				            &.day-mode-dev{
+				            	background-color: #333;
+				            	border-right: none;
+				            	.yii-select-inner{
+				            		color: #fff;
+				            	}
+				            }
+				            &.day-mode-couplet{
+				            	background-color: #f98a00;
+				            	border-right: none;
+				            }
+				            &.day-mode-test{
+				            	background-color: red;
+				            	border-right: none;
+				            	.yii-select-inner{
+				            		color: #fff;
+				            	}
+				            }
+				            input,.yii-select{
+				            	height: 100%;
+				            	width: 100%;
+				            	border:none;
+				            	outline: none;
+				            	background-color: transparent;
+				            	text-align: center;
+				            }
+				            .yii-button-content,.yii-icon-calendar{
+				            	display: none;
+				            }
+
+				            .del-btn{
+			    				font-family: YiiIcon!important;
+							    display: inline-block;
+							    speak: none;
+							    font-style: normal;
+							    font-weight: 400;
+							    font-variant: normal;
+							    text-transform: none;
+			    	            color: #666;
+			    	            width: 20px;
+			    	            font-size: 12px;
+			    	            cursor: pointer;
+			    	            &:before{
+			    	            	content: "\E69F";
+			    	            }
+				            }
+				        }
+
+				    }
+				}
+			}
+			
+
+		}
+	}
+
+	
+	
+}

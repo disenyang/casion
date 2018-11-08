@@ -1,0 +1,269 @@
+/**
+ * Created by gaoyang on 2018/01/22.
+ * @title 项目列表样式
+ */
+@import '../../../public/styles/var.css';
+.project-detail-wrapper{
+	text-align: center;
+  	min-height: 100%;
+  	position: relative;
+  	width: 100%;
+  	padding: 20px;
+  	display: flex;
+  	flex-direction: row;
+  	box-sizing: border-box;
+    .col1{
+	    flex: 2;
+	    min-height: 100%;
+	    display: flex;
+	    margin-right: 20px;
+	    flex-direction: column;
+	    .project-detail{
+	    	background-color: #fff;
+	    	height: 40px;
+	    	.open-btn{
+	    		position: relative;
+	    		cursor: pointer;
+	    		margin-top: 5px;
+	    		margin-right: 10px;
+	    		box-sizing: border-box;
+	    		width: 30px;
+	    		height: 30px;
+	    		float: right;
+	    		background-size: 20px 20px;
+	    		background-repeat: no-repeat;
+	    		background-position: center center;
+	    		background-image: url(../../images/open.png);
+	    		&:hover{
+	    			border:1px solid #ddd;
+	    		}
+	    	}
+	    	.edit-btn{
+	    		position: relative;
+	    		cursor: pointer;
+	    		margin-top: 5px;
+	    		margin-right: 10px;
+	    		box-sizing: border-box;
+	    		width: 30px;
+	    		height: 30px;
+	    		float: right;
+	    		background-size: 20px 20px;
+	    		background-repeat: no-repeat;
+	    		background-position: center center;
+	    		background-image: url(../../images/alter.png);
+	    		&:hover{
+	    			border:1px solid #ddd;
+	    		}
+	    	}
+	    	.del-btn{
+	    		position: relative;
+	    		cursor: pointer;
+	    		margin-top: 5px;
+	    		margin-right: 10px;
+	    		box-sizing: border-box;
+	    		width: 30px;
+	    		height: 30px;
+	    		float: right;
+	    		background-size: 20px 20px;
+	    		background-repeat: no-repeat;
+	    		background-position: center center;
+	    		background-image: url(../../images/delete.png);
+	    		&:hover{
+	    			border:1px solid #ddd;
+	    		}
+	    	}
+	    	.deploy-btn{
+	    		position: relative;
+	    		cursor: pointer;
+	    		margin-top: 5px;
+	    		margin-right: 10px;
+	    		box-sizing: border-box;
+	    		width: 30px;
+	    		height: 30px;
+	    		float: right;
+	    		background-size: 20px 20px;
+	    		background-repeat: no-repeat;
+	    		background-position: center center;
+	    		background-image: url(../../images/deploy.png);
+	    		&:hover{
+	    			border:1px solid #ddd;
+	    		}
+	    	}
+	    }
+	    .my-project{
+	    	margin-top: 20px;
+	      	padding: 10px;
+	      	min-height: 300px;
+	      	display: flex;
+	      	background-color: #fff;
+	      	flex-direction: column;
+	      	.title{
+	      		.add-btn{
+	      			position: relative;
+		         	width: 30px;
+		          	height: 30px;
+		          	float: right;
+		          	margin-top: 5px;
+		          	cursor: pointer;
+		            &:before{
+		              	content:"";
+		              	position:absolute;
+		              	left: 5px;
+		              	top: 14px;
+		              	width: 20px;
+		              	height: 2px;
+		              	background-color: #666;
+		            }
+		            &:after{
+		              	content:"";
+		              	position:absolute;
+		              	left: 14px;
+		              	top: 5px;
+		              	width: 2px;
+		              	height: 20px;
+		              	background-color: #666;
+		            }
+		        }
+		    }
+		    .content{
+		        padding: 10px;
+		        flex: 1;
+		        display: flex;
+		        color: #888;
+		        overflow: auto;
+		        .coms-wrapper{
+        			padding:10px 0px;
+        			display: flex;
+        			flex-wrap: wrap;
+        			.com{
+        				margin-right: 10px;
+        				margin-bottom: 10px;
+						width: 80px;
+						height: 80px;
+						border: 1px solid #ddd;
+						cursor: pointer;
+						&:hover{
+							border:1px solid #ccc;
+							box-shadow:0 4px 8px 0 rgba(178,188,192,0.23);
+						}
+						.icon{
+							height: 50px;
+							text-align: center;
+							img{
+								height: 20px;
+								margin-top: 15px;
+							}
+						}
+						.name{
+							color: #333;
+							line-height: 30px;
+							text-align: center;
+							word-spacing: normal;
+
+						}
+					}
+        		}
+		    }
+	    }
+
+	    .my-dongtai{
+	      	margin-top: 20px;
+	      	padding: 10px;
+	      	flex: 1;
+	      	display: flex;
+	      	flex-direction: column;
+	      	background-color: #fff;
+	      	.content{
+	      		flex: 1;
+		        padding: 10px;
+		        .tabbar{
+		          	display: flex;
+		          	.tab{
+		            	cursor: pointer;
+		            	line-height: 30px;
+		            	margin-right: 20px;
+		            	&.selected{
+			              	color: #333;
+			              	font-weight: bold;
+		            	}
+		        	}
+	        	}
+	        	table{
+					width: 100%;
+					tr{
+						td{
+							line-height: 50px;
+							vertical-align: middle;
+							text-align: left;
+							.headimg{
+								vertical-align: middle;
+								width: 30px;
+								height: 30px;
+								border-radius: 15px;
+								cursor: pointer;
+							}
+							.createtime{
+								font-size: 13px;
+								color: #777;
+							}
+							.user-nickname{
+								font-size: 13px;
+								color: #2D59A2;
+								cursor: pointer;
+							}
+						}
+					}
+				}
+	      	}
+	    }
+	}
+	.col2{
+	    flex: 1;
+	    min-height: 100%;
+	    display: flex;
+	    flex-direction: column;
+	    .my-task{
+	      	padding: 10px;
+	      	background-color: #fff;
+	      	min-height: 300px;
+	    }
+	    .my-users{
+	    	flex: 1;
+	    	margin-top: 20px;
+	      	padding: 10px;
+	      	background-color: #fff;
+	      	.content{
+	      		table{
+					width: 100%;
+					tr{
+						td{
+							line-height: 50px;
+							vertical-align: middle;
+							text-align: left;
+							.headimg{
+								vertical-align: middle;
+								width: 30px;
+								height: 30px;
+								border-radius: 15px;
+							}
+							.createtime{
+								font-size: 13px;
+								color: #777;
+							}
+						}
+						.pointer{
+							cursor: pointer;
+						}
+					}
+				}
+	      	}
+	    }
+	 }
+	.title{
+      	font-size: 18px;
+      	line-height: 40px;
+      	text-align: left;
+      	padding-left: 10px;
+      	border-bottom:1px solid #eee;
+  	}
+}

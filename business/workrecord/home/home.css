@@ -1,0 +1,143 @@
+/**
+ * Created by gaoyang on 2018/04/03.
+ * @title 工作记录列表样式
+ */
+@import '../../../public/styles/var.css';
+.workrecord-home-wrapper{
+	margin: 30px;
+	height: calc(100% - 60px);
+	box-sizing: border-box;
+	.workrecord-nodata{
+		line-height: 60px;
+		font-size: 20px;
+		color: #888;
+	}
+	.team-title{
+		line-height: 20px;
+		margin-bottom: 10px;
+		font-size: 16px;
+		
+		.name{
+			color: #333;
+		}
+		.num{
+			padding-left: 10px;
+			color: #333;
+		}
+	}
+	.workrecord-list{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		
+		.workrecord{
+			cursor: pointer;
+			width: 250px;
+			padding: 10px;
+			height: 350px;
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+			border-radius: 10px;
+			background-color: #fff;
+			margin-right: 20px;
+			margin-bottom: 20px;
+
+			.name{
+				line-height: 50px;
+				text-align: center;
+				font-size: 15px;
+				color: #333;
+			}
+			.headimg{
+				text-align: center;
+				color: #333;
+				font-size:14px;
+				margin-top: 20px;
+				img{
+					width: 50px;
+					height: 50px;
+					border-radius: 25px;
+				}
+			}
+			.owner{
+				text-align: right;
+				padding-right: 10px;
+				color: #666;
+			}
+			.loading{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: #888;
+				flex: 1;
+			}
+			.wmy{
+				flex: 1;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				.one{
+					flex: 1;
+					.num{
+						text-align: center;
+						font-size: 30px;
+						line-height: 50px;
+						
+					}
+					.title{
+						text-align: center;
+						font-size: 18px;
+						line-height: 50px;
+						font-weight: bold;
+					}
+					.columner{
+						width: 30px;
+						height: 80px;
+						margin: auto;
+					}
+
+				}
+				.wwrnum{
+					.columner{
+						background-color: #248bf2;
+					}
+					.num,.title{
+						color: #248bf2;
+					}
+				}
+				.mwrnum{
+					.columner{
+						background-color: #ff3090;
+					}
+					.num,.title{
+						color: #ff3090;
+					}
+				}
+				.ywrnum{
+					.columner{
+						background-color: #ff9030;
+					}
+					.num,.title{
+						color: #ff9030;
+					}
+				}
+			}
+			.remark{
+				text-align: center;
+				flex:1;
+				overflow: hidden;
+				color: #666;
+				line-height: 25px;
+				font-size:12px;
+				.img{
+					width: 50px;
+					height: 50px;
+				}
+			}
+			.edit-btn{
+				text-align: right;
+			}
+		}
+	}
+}

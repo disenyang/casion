@@ -1,0 +1,10 @@
+/**
+ * Created by gaoyang on 2018/03/27.
+ * @title 需求列表样式
+ */
+@import '../../../public/styles/var.css';
+.requirement-detail-wrapper{
+    .yii-row{
+        line-height:50px;
+    }
+}

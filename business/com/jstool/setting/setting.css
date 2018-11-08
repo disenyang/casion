@@ -1,0 +1,100 @@
+/**
+ * Created by gaoyang on 2018/01/20.
+ * @title 基础组件列表样式
+ */
+@import '../../../../public/styles/var.css';
+.jstool-setting-wrapper{
+	padding: 20px;
+	height: 100%;
+	box-sizing: border-box;
+	.form{
+		background: #fff;
+		height: 100%;
+		width: 500px;
+		padding: 10px;
+		border-radius: 10px;
+		box-sizing: border-box;
+		.row{
+			padding: 15px 10px;
+			display: flex;
+			.label{
+				line-height: 40px;
+				width: 60px;
+				text-align: right;
+				padding-right: 20px;
+			}
+			.val{
+				flex: 1;
+				color: #666;
+				.icon{
+					vertical-align: top;
+					cursor: pointer;
+					display: inline-block;
+					.icon-img{
+						margin-right: 20px;
+						border:1px solid #ddd;
+						height: 48px;
+						width: 48px;
+						text-align: center;
+						img{
+							margin-top: 9px;
+							width: 30px;
+							height: 30px;
+						}
+					}
+				}
+				.icon-lab{
+					
+					vertical-align: top;
+					display: inline-block;
+					line-height: 48px;
+				}
+			}
+		}
+		.btns{
+			margin-top: 20px;
+			margin-left: 10px;
+		}
+	}
+	
+
+	.yii-button--gray.yii-button--text{
+		color: #fff;
+	}
+	
+	.yii-select{
+		border: 1px solid #ddd;
+	}
+	.yii-input-el {
+	    color: #666;
+	    line-height: 40px;
+	    height: 40px;
+	    border: 1px solid #ddd;
+	    border-radius: 2px;
+	}
+	.yii-button--stroke{
+		height: 40px;
+	    line-height: 40px;
+	    border:1px solid #32be77;
+	    border-radius: 20px;
+	    color: #32be77;
+	}
+	.yii-button--solid{
+		cursor: pointer;
+	    height: 40px;
+	    line-height: 40px;
+	    background-color: #32be77;
+	    border-radius: 20px;
+	    color: #fff;
+	    font-size: 18px;
+	    text-align: center;
+	    border:0px;
+	    padding: 0 40px;
+	}
+	.is-icon-only{
+		background-color: transparent;
+		border-radius: 0px;
+		border:1px solid #ddd;
+		height: 48px;
+	}
+}

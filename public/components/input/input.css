@@ -1,0 +1,15 @@
+.input-wrapper{
+	height: 36px;
+	line-height: 36px;
+	outline: none;
+	border:1px solid #adc2cc;
+	color:#576166;
+	border-radius:2px;
+	box-sizing: border-box;
+	padding: 0px 5px;
+	margin: 10px;
+	&:hover{
+		transition: box-shadow .3s;
+    	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+	}
+}

@@ -1,0 +1,18 @@
+{
+    plugins: {
+        'postcss-bem': {
+            shortcuts: {
+                'component-namespace': 'n',
+                'component': 'b',
+                'descendent': 'e',
+                'modifier': 'm',
+                'when' : 'when',
+                'utility': 'u'
+            }
+        },
+        'precss': {},
+        'postcss-calc': {},
+        'postcss-utilities': {},
+        'autoprefixer': {}
+    }
+}

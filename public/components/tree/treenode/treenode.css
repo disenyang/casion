@@ -1,0 +1,60 @@
+.yi-node{
+	margin-left: 20px;
+	.yi-node-wrapper{
+		.node{
+			
+			white-space: nowrap;
+			cursor: pointer;
+			.icon{
+				vertical-align: top;
+				display: inline-block;
+				width: 20px;
+				height: 100%;
+				position: relative;
+	         	width: 30px;
+	          	height: 30px;
+	          	cursor: pointer;
+	            &:before{
+	              	content:"";
+	              	position:absolute;
+	              	left: 10px;
+	              	top: 14px;
+	              	width: 10px;
+	              	height: 2px;
+	              	background-color: #666;
+	            }
+	            &:after{
+	              	content:"";
+	              	position:absolute;
+	              	left: 14px;
+	              	top: 10px;
+	              	width: 2px;
+	              	height: 10px;
+	              	background-color: #666;
+	            }
+				&.expand{
+					&:before{
+		              	content:"";
+		              	position:absolute;
+		              	left: 10px;
+		              	top: 14px;
+		              	width: 10px;
+		              	height: 2px;
+		              	background-color: #666;
+		            }
+		            &:after{
+		              	content:"";
+		              	background-color: transparent;
+		            }
+		            
+				}
+			}
+			.title{
+				vertical-align: top;
+				display: inline-block;
+				line-height: 30px;
+				
+			}
+		}
+	}
+}

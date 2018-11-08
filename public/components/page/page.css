@@ -1,0 +1,6 @@
+.casion-page-wrapper{
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	box-sizing: border-box;
+}

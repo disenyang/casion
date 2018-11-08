@@ -1,0 +1,30 @@
+/**
+ * Created by gaoyang on 2018/03/27.
+ * @title 公司列表样式
+ */
+@import '../../../public/styles/var.css';
+.company-setting-wrapper{
+	width: 600px;
+	margin: 20px;
+	height: calc(100% - 40px);
+	box-sizing: border-box;
+	background: #fff;
+	padding: 20px;
+	.icon{
+		vertical-align: top;
+		cursor: pointer;
+		display: inline-block;
+		.icon-img{
+			margin-right: 20px;
+			border:1px solid #ddd;
+			height: 48px;
+			width: 48px;
+			text-align: center;
+			img{
+				margin-top: 9px;
+				width: 30px;
+				height: 30px;
+			}
+		}
+	}
+}

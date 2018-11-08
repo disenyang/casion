@@ -1,0 +1,9 @@
+/**
+ * Created by gaoyang on 2018/01/04.
+ * @title 数据模型列表样式
+ */
+.model-detail-wrapper{
+    .yii-row{
+        line-height:50px;
+    }
+}

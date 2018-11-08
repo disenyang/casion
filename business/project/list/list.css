@@ -1,0 +1,138 @@
+/**
+ * Created by gaoyang on 2018/01/22.
+ * @title 项目列表样式
+ */
+@import '../../../public/styles/var.css';
+.project-list-wrapper{
+	padding: 20px;
+	.col1{
+	    height: 100%;
+	    display: flex;
+	    flex-direction: column;
+	    .my-project{
+	      	min-height: 600px;
+	      	display: flex;
+	      	flex-direction: column;
+	      	.title{
+	      		display: flex;
+	      		.tabs{
+	      			flex: 1;
+			      	.tab{
+			      		cursor: pointer;
+			      		display: inline-block;
+			      		line-height: 40px;
+			      		padding: 0px 10px;
+			      		margin-right: 10px;
+			      		font-size: 13px;
+			      		color: #666;
+			      		&.selected{
+			      			font-size: 15px;
+			      			color: #333;
+			      			background: #fff;
+			      		}
+			      	}
+		      	}
+		      	.btns{
+			        width: 100px;
+			        .add-pro-btn{
+			          cursor: pointer;
+			          line-height: 40px;
+			          margin-right: 10px;
+			          font-size: 15px;
+			          color: #222;
+			        }
+		    	}
+	      	}
+	      
+	      .content{
+	     	background-color: #fff;
+	        padding: 10px;
+	        flex: 1;
+	        display: flex;
+	        color: #888;
+	        flex-wrap: wrap;
+	        .project{
+	        	width: 100px;
+	          	height: 130px;
+	          	margin-right: 40px;
+	          	.icon{
+		            background-color: #fff;
+		            cursor: pointer;
+		            position: relative;
+		            width: 100px;
+		            height: 100px;
+		            margin-right: 10px;
+		            img{
+		            	width: 100%;
+		            	height: 100%;
+		            	border-radius:5px;
+		            }
+	        	}
+	        	.caption{
+		            line-height: 25px;
+		            height: 50px;
+		            overflow: hidden;
+		            text-align: center;
+		          }
+	        }
+	        .add-btn{
+	          width: 100px;
+	          height: 130px;
+	          .icon{
+	            background-color: #fff;
+	            cursor: pointer;
+	            position: relative;
+	            width: 100px;
+	            height: 100px;
+	            margin-right: 10px;
+	            border: 1px dashed #ddd;
+	            &:before{
+	              content:"";
+	              position:absolute;
+	              left: 20px;
+	              top: 49px;
+	              width: 60px;
+	              height: 2px;
+	              background-color: #666;
+	            }
+	            &:after{
+	              content:"";
+	              position:absolute;
+	              left: 49px;
+	              top: 20px;
+	              width: 2px;
+	              height: 60px;
+	              background-color: #666;
+	            }
+	          }
+	          .caption{
+	            line-height: 30px;
+	            text-align: center;
+	          }
+	        }
+	      }
+	    }
+
+	    .my-create-project{
+	      margin-top: 20px;
+	      padding: 10px;
+	      flex: 1;
+	      background-color: #fff;
+	      .content{
+	        padding: 10px;
+	        .tabbar{
+	          display: flex;
+	          .tab{
+	            cursor: pointer;
+	            line-height: 30px;
+	            margin-right: 20px;
+	            &.selected{
+	              color: #333;
+	              font-weight: bold;
+	            }
+	          }
+	        }
+	      }
+	    }
+	}
+}

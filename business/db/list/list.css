@@ -1,0 +1,229 @@
+/**
+ * Created by gaoyang on 2018/01/05.
+ * @title 数据库列表样式
+ */
+.db-list-wrapper{
+	margin: 20px;
+    height: calc(100% - 40px);
+    box-sizing: border-box;
+    display: flex;
+    .db-list-left{
+		width: 200px;
+		background: #fff;		
+		padding-left: 20px;
+		padding-top: 20px;
+		.db-list{
+			.db{
+				line-height: 30px;
+				cursor: pointer;
+				color: #333;
+				background: url(../../images/db.png);
+				background-size: 20px 20px;
+				padding-left: 30px;
+				background-repeat: no-repeat;
+				background-position: left center;
+			}
+		}
+	}
+    .db-list-right{
+    	margin-left: 20px;
+    	flex: 1;
+    	background: #fff;
+    	.model-list-wrapper{
+		    display: flex;
+		    height: 100%;
+		    .model-left{
+		        display: flex;
+		        flex-direction:column;
+		        width: 200px;
+		        margin-right: 10px;
+		       
+		        .title{
+		            height: 30px;
+		        }
+		        .list{
+		            flex: 1;
+		            border:1px solid #ddd;
+		            .db-wrapper{
+		                padding: 0px 10px;
+		                line-height: 40px;
+		                cursor: pointer;
+		                &.selected{
+		                    background-color: #248bf2;
+		                    color: #fff;
+		                }
+		            }
+		        }
+		    }
+		    .model-center{
+		        width: 250px;
+		        margin-right: 10px;
+		        overflow: auto;
+		        display: flex;
+		        flex-direction:column;
+		        .title{
+		            height: 30px;
+		            .caption{
+		                float: left;
+		            }
+		            .new-model{
+		                cursor: pointer;
+		                float: right;
+		                color: #248bf2; 
+		            } 
+		        }
+		        .list{
+		            flex: 1;
+		            border:1px solid #ddd;
+		            .model-wrapper{
+		                padding: 0px 10px;
+		                line-height: 40px;
+		                cursor: pointer;
+		                &.selected{
+		                    background-color: #248bf2;
+		                    color: #fff;
+		                }
+		            }
+		        }
+		    }
+		    .model-right{
+		        flex: 1;
+		        overflow: auto;
+		        display: flex;
+		        flex-direction:column;
+		        .title{
+		            height: 30px;
+		        }
+		        .options{
+		            height: 50px;
+		            background-color: #eee;
+		            display: flex;
+		            .icon-btn{
+
+		            }
+		        }
+		        .list{
+		            flex: 1;
+		            border:1px solid #ddd;
+		            border-spacing: 0;
+		            .my-table{
+		                border-collapse: collapse;
+		                width: 100%;
+		                border-top:0px solid #ddd;
+		                border-bottom:1px solid #ddd;
+		                tr{
+		                    th{
+		                        background-color: #eeeeee;
+		                        padding: 8px;
+		                        text-align: center;
+		                        line-height: 25px;
+		                        /*border-right: 1px solid #dddddd;*/
+		                        vertical-align: middle;
+		                        word-wrap: break-word;
+		                        word-break: break-all;
+		                        color: #666;
+		                    }
+		                    td{
+		                        height: 30px;
+		                        color: #666;
+		                        border-right: 1px solid #dddddd;
+		                        border-top:1px solid #ddd;
+		                        text-align: center;
+		                        padding: 0px;
+		                        a{
+		                            color: #4ab3fb;
+		                        }
+		                        input,select{
+		                            margin: 0px;
+		                            border:0px;
+		                            width: 100%;
+		                            height: 100%;
+		                            text-align: center;
+		                            padding: 0px 5px;
+		                            background-color: transparent;
+		                            outline: none;
+		                        }
+		                        
+		                        &.op{
+		                            padding: 5px;
+		                        }
+		                    }
+		                    &.row-selected{
+		                        background-color: var(--color-primary-light);
+		                        td{
+		                            input,select{
+		                                color: #fff;
+		                            }
+		                            
+		                        }
+		                    }
+		                } 
+		            }
+		        }
+		        .my-value-table{
+		                border-collapse: collapse;
+		                width: 500px;
+		                border:1px solid #ddd;
+		                margin-bottom: 5px;
+		                tr{
+		                    th{
+		                        background-color: #eeeeee;
+		                        padding: 8px;
+		                        text-align: center;
+		                        line-height: 25px;
+		                        border-right: 1px solid #dddddd;
+		                        vertical-align: middle;
+		                        word-wrap: break-word;
+		                        word-break: break-all;
+		                        color: #666;
+		                    }
+		                    td{
+		                        height: 30px;
+		                        color: #666;
+		                        border-right: 1px solid #dddddd;
+		                        border-top:1px solid #ddd;
+		                        text-align: center;
+		                        padding: 0px;
+		                        a{
+		                            color: #4ab3fb;
+		                        }
+		                        input,select{
+		                            margin: 0px;
+		                            border:0px;
+		                            width: 100%;
+		                            height: 100%;
+		                            text-align: center;
+		                            padding: 0px 5px;
+		                            background-color: transparent;
+		                            outline: none;
+		                        }
+		                        
+		                        &.op{
+		                            padding: 5px;
+		                        }
+		                    }
+		                    
+		                } 
+		            }
+		    }
+		    .p-label{
+		        width: 100px;
+		        text-align: right;
+		        padding-right: 5px;
+		        line-height: 46px;
+		    }
+		    .p-value{
+		        padding: 7px;
+		    }
+		    .p-label-c{
+		        width: 50px;
+		        text-align: left;
+		        line-height: 46px;
+		    }
+		    .p-value-c{
+		        padding: 7px;
+		    }
+
+		}
+    }
+}

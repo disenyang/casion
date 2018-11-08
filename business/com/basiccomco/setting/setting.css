@@ -1,0 +1,30 @@
+/**
+ * Created by gaoyang on 2018/01/20.
+ * @title 基础组件库列表样式
+ */
+@import '../../../../public/styles/var.css';
+.basiccomco-setting-wrapper{
+	margin: 20px;
+	padding: 20px;
+	height: calc(100% -40px);
+	box-sizing: border-box;
+	background-color: #fff;
+	width: 600px;
+	.icon{
+		vertical-align: top;
+		cursor: pointer;
+		display: inline-block;
+		.icon-img{
+			margin-right: 20px;
+			border:1px solid #ddd;
+			height: 48px;
+			width: 48px;
+			text-align: center;
+			img{
+				margin-top: 9px;
+				width: 30px;
+				height: 30px;
+			}
+		}
+	}
+}

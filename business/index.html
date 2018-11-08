@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- <meta name="referrer" content="no-referrer" /> -->
+  <!-- <meta name="referrer" content="never" /> -->
+  <!-- css -->
+  <link rel="stylesheet" href="http://rongyi.b0.upaiyun.com/fe/yii-ui/default/style.all.min.css">
+  <style type="text/css">
+    body{
+      background-color: #f8f8f8;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app" class="p-main">
+    <router-view :crumbs="crumbs"></router-view>
+  </div>
+  <div class="iframe"><iframe src="" name="downLoadFrame" frameborder="0"></iframe></div>
+  <!-- vue min -->
+  <script src="http://rongyi.b0.upaiyun.com/fe/vue/2.5.13/vue-combo.min.js"></script>
+  <!-- yii-ui.min -->
+  <script src="http://rongyi.b0.upaiyun.com/fe/yii-ui/default/index.all.js"></script>
+  
+  <script type="text/javascript">
+    if(navigator.appName == "Microsoft Internet Explorer" && 
+      (navigator.appVersion.match(/MSIE 6./i)=="MSIE 6." || 
+        navigator.appVersion.match(/MSIE 7./i)=="MSIE 7."||
+        navigator.appVersion.match(/MSIE 8./i)=="MSIE 8.")){
+      alert("请确保您使用IE9+，chrome，firefox，safari或360浏览器极速模式来浏览本网站以获得最佳的视觉效果"); 
+    }
+  </script>
+</body>
+
+</html>

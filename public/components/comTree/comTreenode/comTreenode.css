@@ -1,0 +1,90 @@
+.yi-com-tree-node{
+
+	.yi-node-wrapper{
+		position: relative;
+		.split-line{
+			position: absolute;
+			left: 15px;
+			top: 30px;
+			width: 1px;
+			bottom: 10px;
+			border-right: 1px dashed #463731;
+		}
+		.node{
+			white-space: nowrap;
+			cursor: pointer;
+			&.selected{
+				background-color: #333;
+			}
+			.icon{
+				vertical-align: top;
+				display: inline-block;
+				width: 20px;
+				height: 100%;
+				position: relative;
+	         	width: 30px;
+	          	height: 30px;
+	          	cursor: pointer;
+	            &:before{
+	              	content:"";
+	              	position:absolute;
+	              	left: 10px;
+	              	top: 14px;
+	              	width: 10px;
+	              	height: 2px;
+	              	background-color: #fff;
+	            }
+	            &:after{
+	              	content:"";
+	              	position:absolute;
+	              	left: 14px;
+	              	top: 10px;
+	              	width: 2px;
+	              	height: 10px;
+	              	background-color: #fff;
+	            }
+				&.expand{
+					&:before{
+		              	content:"";
+		              	position:absolute;
+		              	left: 10px;
+		              	top: 14px;
+		              	width: 10px;
+		              	height: 2px;
+		              	background-color: #fff;
+		            }
+		            &:after{
+		              	content:"";
+		              	background-color: transparent;
+		            }
+		            
+				}
+			}
+			.title{
+				vertical-align: top;
+				display: inline-block;
+				line-height: 30px;
+				color: #fff;
+				.header{
+					display: flex;
+					padding-right: 10px;
+					&.selected{
+						background-color: #333;
+					}
+					.name{
+						font-size: 15px;
+					}
+					.prop{
+						margin-left: 10px;
+						.prop-name{
+							color:#32be77;
+						}
+						.prop-value{
+							color:#32be77;
+						}
+					}
+				}
+			}
+		}
+	}
+}

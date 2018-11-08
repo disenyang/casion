@@ -1,0 +1,13 @@
+/**
+ * Created by gaoyang on 2018/04/08.
+ * @title 计划列表样式
+ */
+@import '../../../public/styles/var.css';
+.plan-setting-wrapper{
+	margin: 20px;
+	width: 500px;
+	height: calc(100% - 40px);
+	box-sizing: border-box;
+	background: #fff;
+	padding: 20px;
+}

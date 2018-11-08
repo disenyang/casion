@@ -1,0 +1,247 @@
+.yi-node{
+	margin-left: 40px;
+	.yi-node-wrapper{
+		position: relative;
+		.split-line{
+			position: absolute;
+			left: 15px;
+			top: 30px;
+			width: 1px;
+			bottom: 15px;
+			border-right: 1px dashed #464741;
+		}
+		.node{
+			display: flex;
+			white-space: nowrap;
+			cursor: pointer;
+			.icon{
+				vertical-align: top;
+				display: inline-block;
+				width: 20px;
+				height: 100%;
+				position: relative;
+	         	width: 30px;
+	          	height: 30px;
+	          	cursor: pointer;
+	            &:before{
+	              	content:"";
+
+	              	position:absolute;
+	              	left: 10px;
+	              	top: 14px;
+	              	width: 10px;
+	              	height: 2px;
+	              	background-color: #666;
+	            }
+	            &:after{
+	              	content:"";
+	              	position:absolute;
+	              	left: 14px;
+	              	top: 10px;
+	              	width: 2px;
+	              	height: 10px;
+	              	background-color: #666;
+	            }
+				&.expand{
+					&:before{
+		              	content:"";
+		              	position:absolute;
+		              	left: 10px;
+		              	top: 14px;
+		              	width: 10px;
+		              	height: 2px;
+		              	background-color: #666;
+		            }
+		            &:after{
+		              	content:"";
+		              	background-color: transparent;
+		            }
+		            
+				}
+			}
+			.node-wrapper{
+				vertical-align: top;
+				display: flex;
+				flex: 1;
+				line-height: 30px;
+				.header{
+					display: flex;
+					color: #666;
+					position: relative;
+					flex:1;
+					padding-left: 5px;
+					padding-right: 5px;
+					.name-wrapper{
+						width: 100px;
+						.name{
+							height: 30px;
+							width: 100%;
+							width: auto;
+							position: relative;
+							.name-input{
+								min-width: 50px;
+								height: 100%;
+								width: 100%;
+								color: #f92670;
+								font-size: 17px;
+								background-color: transparent;
+								border:none;
+							}
+							.del-icon{
+								display: block;
+								z-index: 10;
+								position: absolute;
+								background: #32be77;
+								width: 14px;
+								height: 14px;
+								right: 0px;
+								top: 9px;
+								border-radius: 8px;
+								&:before{
+									content:"";
+									position: absolute;
+									background: #fff;
+									border-radius: 2px;
+									width: 8px;
+									height: 2px;
+									left: 3px;
+									top: 6px;
+								}
+							}
+
+							.pop-menu{
+
+								min-width: 200px;
+								position: absolute;
+								background: #fff;
+								border:1px solid #000;
+								max-height: 300px;
+								overflow: auto;
+								border-radius: 2px;
+								z-index: 10;
+								top: 30px;
+								left: 0px;
+								.menu{
+									display: flex;
+									
+									.prop{
+										flex: 1;
+										margin-left: 5px;
+										color: #666;
+										font-size: 15px;
+										display: flex;
+										align-items: center;
+
+										.before-prop{
+											
+										}
+										.sel-prop{
+											color: #000;
+
+										}
+										.after-prop{
+											
+										}
+									}
+
+									&.selected{
+										background:#ddd; 
+									}
+									
+									.name{
+
+										width: 100px;
+										margin-right: 5px;
+										text-align: right;
+										color: #888;
+										font-size: 13px;
+										position: relative;
+
+									}
+								}
+							}
+						}
+					}
+					
+					.editor{
+						position: relative;
+						flex: 1;
+						display: flex;
+
+						.prop-values{
+							flex: 1;
+							border:none;
+							color: #a6e22e;
+							margin-left: 10px;
+							font-size: 17px;
+							word-spacing: 5px;
+							background: transparent;
+						}
+						.pop-menu{
+							min-width: 200px;
+							position: absolute;
+							background: #fff;
+							border:1px solid #000;
+							max-height: 300px;
+							overflow: auto;
+							border-radius: 2px;
+							z-index: 10;
+							.menu{
+								display: flex;
+								
+								.prop{
+									flex: 1;
+									margin-left: 5px;
+									color: #666;
+									font-size: 15px;
+									display: flex;
+									align-items: center;
+
+									.before-prop{
+										
+									}
+									.sel-prop{
+										color: #000;
+
+									}
+									.after-prop{
+										
+									}
+								}
+
+								&.selected{
+									background:#ddd; 
+								}
+								
+								.name{
+
+									width: 100px;
+									margin-right: 5px;
+									text-align: right;
+									color: #888;
+									font-size: 13px;
+									position: relative;
+
+								}
+							}
+						}
+						
+					}
+					
+					.prop{
+						margin-left: 10px;
+						.prop-name{
+							color:#32be77;
+						}
+						.prop-value{
+							color:#a6e22e;
+						}
+					}
+					
+					
+					
+				}
+			}
+		}
+	}
+}

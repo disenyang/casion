@@ -1,0 +1,214 @@
+/**
+ * Created by gaoyang on 2018/01/20.
+ * @title 基础组件列表样式
+ */
+@import '../../../../public/styles/var.css';
+
+.basiccom-detail-wrapper{
+	background-color: var(--color-contentbg);
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	.CodeMirror{
+		height: 100%;
+		font-size: 17px;
+		line-height: 20px;
+	}
+    .edit-area{
+    	width: 100%;
+    	height: calc(100% - 120px);
+    	.line1{
+    		width: 40%;
+    		float: left;
+	    	height: 100%;
+	    	.preview-page{
+	    		padding: 20px 15px 20px 20px;
+	    		width: 100%;
+	    		height: 45%;
+	    		box-sizing: border-box;
+	    		flex-direction: column;
+	    		.title{
+			    	height: 30px;
+			    	line-height: 30px;
+			    	padding-left: 10px;
+			    	background-color: #333;
+			    	font-size: 16px;
+			    	font-weight: bold;
+			    	color: #fff;
+			    }
+	    		.content{
+	    			box-sizing: border-box;
+	    			padding: 10px;
+			    	background-color: #fff;
+			    	width: 100%;
+			    	height:calc(100% - 30px);
+			    	overflow: auto;
+			    	position: relative;
+			    }
+	    	}
+	    	.tabbar{
+	    		margin-left:20px; 
+	    		line-height: 30px;
+	    		height: 30px;
+	    		display: flex;
+	    		.tab{
+	    			color: #333;
+	    			font-size: 15px;
+	    			padding: 0px 10px;
+	    			cursor: pointer;
+	    			white-space: nowrap;
+	    			.title{
+	    				display: inline-block;
+	    			}
+	    			.runtest-btn{
+			    		margin-left: 5px;
+			    		width: 30px;
+			    		height: 30px;
+			    		vertical-align: top;
+			    		display: inline-block;
+	    				vertical-align: top;
+    					background-image:url('../../../images/run.png');  
+    					background-size: 20px 20px;
+    					background-repeat: no-repeat;
+    					background-position: center center;
+			    	}
+	    			
+	    			&.selected{
+	    				background: #333;
+	    				color: #fff;
+	    				border-top-left-radius: 3px;
+	    				border-top-right-radius: 3px;
+	    			}
+	    		}
+	    	}
+	    	.view-page{
+	    		box-sizing: border-box;
+	    		padding:0px 15px 0px 20px;
+	    		width: 100%;
+	    		height: calc(55% - 90px);
+	    		flex-direction: column;
+	    		.content{
+	    			height: 100%;
+	    			width: 100%;
+
+	    		}
+	    	}
+	    	.style-page{
+	    		float: left;
+	    		padding: 0px 15px 0px 20px;
+	    		width: 100%;
+	    		height: calc(55% - 90px);
+	    		box-sizing: border-box;
+	    		flex-direction: column;
+	    		.content{
+	    			height: 100%;
+	    		}
+	    	}
+	    	.test-page{
+	    		float: left;
+	    		padding: 0px 15px 0px 20px;
+	    		width: 100%;
+	    		height: calc(55% - 90px);
+	    		box-sizing: border-box;
+	    		flex-direction: column;
+	    		.content{
+	    			height: 100%;
+	    		}
+	    	}
+	    	.detail-page{
+		    	display: flex;
+		    	padding: 0px 10px 0px 20px;
+		    	box-sizing: border-box;
+		    	height: 60px;
+		    	flex-direction: column;
+		    	.title{
+		    		font-size: 16px;
+			    	font-weight: bold;
+			    	color: #333;
+			    	line-height: 30px;
+			    	height: 30px;
+		    	}
+		    	.content{
+		    		flex: 1;
+			        display: flex;
+			        .row{
+			        	margin-right: 30px;
+			        	display: flex;
+			        	.lab{
+				        	line-height: 30px;
+				        	margin-right: 2px;
+				        	color: #333;
+				        }
+				        .val{
+				        	line-height: 30px;
+				        	height: 30px;
+				        	color: #666;
+				        	img{
+				        		margin-top: 5px;
+				        		height: 20px;
+				        	}
+				        }
+				        .edit-btn{
+				    		position: relative;
+				    		cursor: pointer;
+				    		margin-right: 10px;
+				    		box-sizing: border-box;
+				    		width: 30px;
+				    		height: 30px;
+				    		float: right;
+				    		background-size: 20px 20px;
+				    		background-repeat: no-repeat;
+				    		background-position: center center;
+				    		background-image: url(../../../images/alter.png);
+				    		&:hover{
+				    			border:1px solid #ddd;
+				    		}
+				    	}
+			        }
+			        
+		    	}
+		    	
+		    }
+	    }
+	    .line2{
+	    	width: 60%;
+	    	height: 100%;
+	    	float: left;
+	    	.js-page{
+	    		padding: 0px 0px 0px 0px;
+	    		width: 100%;
+	    		height: 100%;
+	    		box-sizing: border-box;
+	    		flex-direction: column;
+	    		.title{
+			    	height: 30px;
+			    	line-height: 30px;
+			    	padding-left: 10px;
+			    	background-color: #333;
+			    	font-size: 16px;
+			    	font-weight: bold;
+			    	color: #fff;
+			    }
+	    		.content{
+			    	background-color: #fff;
+			    	width: 100%;
+			    	height:calc(100% - 30px);
+			    	overflow: auto;
+			    }
+	    	}
+	    	
+	    }
+	    .title1{
+	    	height: 30px;
+	    	line-height: 30px;
+	    	padding-left: 10px;
+	    	font-size: 16px;
+	    	background-color: #fff;
+	    	font-weight: bold;
+	    	color: #333;
+	    }
+	    
+	    
+    }
+    
+}

@@ -1,0 +1,33 @@
+/**
+  *皮肤
+*/
+body{
+	.yii-nav-primary-logo{
+		height: 58px;
+	}
+	.yii-modal-header{
+		/*background: #333;*/
+		.yii-modal-header-title{
+			/*color: #fff;*/
+		}
+	}
+	.yii-modal{
+		border: 0px;
+	}
+	
+	.yii-modal-footer .btns{
+		line-height: 50px;
+		text-align: center;
+		button{
+			cursor: pointer;
+			width: 100px;
+			height: 40px;
+			border-radius:20px; 
+			background: #32be77;
+			color: #fff;
+			margin-right: 20px;
+			margin-left: 0px;
+			outline: none;
+		}
+	}
+}
