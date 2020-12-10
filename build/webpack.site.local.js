@@ -98,7 +98,7 @@ webpackConfig.devServer = {
       pathRewrite:{"^/casion":""}
     },
     '^/casionj/**': {
-      target: "http://localhost:8099/tongxiang",
+      target: "https://xiaowanwu.cn/tongxiang",
       changeOrigin: true,
       pathRewrite:{"^/casionj":""},
       onProxyReq:function(proxyReq, req, res) {
